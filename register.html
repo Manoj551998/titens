@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="tnlogo.png"/>
+	<script type="text/javascript"src="jscript.js"></script>
+</head>
+<body oncontextmenu="return false;">
+<div class="box">
+	<img src="image.png" class="user"><br>
+	<h1>Register here</h1>
+	<form name="register"action="register.php"method="POST" onsubmit="return vfun1()">
+		<p>Username</p>
+		<input type="text" name="uname" placeholder="Enter user name"required="">
+		<p>Password</p>
+		<input type="password" name="upswd" placeholder="Enter Password"required="">
+		<p>Retype-Password</p>
+		<input type="password" name="upswd2" placeholder="Retype password"required="">
+		<p>Date of Birth</p>
+		<input type="text" name="dob" placeholder="yyyy/mm/dd"required="">
+		<p>Gender</p>
+		<label for="one">Male</label>
+		<input type="radio"id="one" name="gender"value="Male"/>
+		<label for="two">Female</label>
+		<input type="radio"id="two" name="gender"value="Female"/>
+		<label for="three">Others</label>
+		<input type="radio"id="three" name="gender"value="Others"/>
+		<p>E-Mail</p>
+		<input type="text" name="email"placeholder="Enter your Email"required="">
+		<p>Phone</p>
+		<input type="text"name="phone"Placeholder="Enter your phone number"required="">
+		<P>Address</P>
+		<input type="text"name="address"placeholder="Enter your Permanent address"required="">
+		<input type="checkbox" name="terms">
+		<label for="accept"> Agree terms & Conditions</label>
+		<br><div id="errorBox">
+		
+		
+
+     <input type="submit" name="register"value="Register">
+     <br>
+
+    <a href="index.html"><h4>Existing user,Login !</h4></a>
+     </form>
+
+</div>
+</body>
+</html>
